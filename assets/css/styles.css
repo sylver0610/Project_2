@@ -9,6 +9,8 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    background: #FFFAF5;
+    ;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -19,3 +21,85 @@ input,textarea,select,button{
     font-size: inherit;
     font-family: inherit;
 }
+
+:root{
+    --primary-color:#000958;
+    --desc-color:#656689;
+   
+}
+
+/* ---------Common---------- */
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    max-width: calc(100% - 48px);
+}
+
+.btn{
+    --height: 56px;
+
+    display: inline-block;
+
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 130px;
+
+    font-weight: 600;
+    font-size: 1.4rem;  
+ 
+    text-align: center; 
+
+    border: 1px rgb(0, 9, 88, 0.7) solid;
+    border-radius: 99px;    
+    
+    color: var(--primary-color);
+}
+
+
+/* -----header------ */
+
+.header{
+    padding: 26px 0;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+
+    
+}
+
+.navbar__list{
+    display: flex;
+   
+    
+}
+
+.header-action__link,
+.nav__link
+{    
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5e6085;
+    padding: 8px 18px;
+}
+
+.nav__link:hover{
+    text-shadow: 1px 0 0 currentColor;
+    color: var(--primary-color);
+}
+
+.header-action__btn{
+    --height: 50px;
+   
+   min-width: 118px;
+   height: var(--height);    
+}
+ 
